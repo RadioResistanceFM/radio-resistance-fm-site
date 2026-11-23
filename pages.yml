@@ -1,0 +1,30 @@
+media:
+  input: media
+  output: /media
+content:
+  - name: articles
+    label: Atik yo
+    type: file
+    path: articles.json
+    format: json
+    fields:
+      - name: articles
+        label: Atik
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Tit
+            type: string
+          - name: date
+            label: Dat
+            type: date
+          - name: text
+            label: Tèks
+            type: text
+          - name: image
+            label: Foto
+            type: image
+          - name: video
+            label: Lyen video YouTube
+            type: string
